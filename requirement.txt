@@ -1,0 +1,1 @@
+theres code to auto lift all packages and put them in here. pip freeze > requirements.txt
