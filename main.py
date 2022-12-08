@@ -1,59 +1,23 @@
 from os import system
 from datetime import date
-# from seed import seed
-# from items_operations import print_list_of_items, add_item, delete_item, update_item_price
+import time
 
-#gets the list of products from the seed method, imported from seed.py
-# list_of_products = seed()
 
-# define today
+# set date to use in main menu
 today = date.today()
-
+# set out the list of birthdays this is all drawn from
+birthday_file = "list_of_birthdays.txt"
 
 # Prints a menu with several options and returns the selected option
 def print_options():
     # print(f'Welcome to your birthday reminder app. It is {today}. What would you like to do today?')
-    print("1. Check for birthdays")
-    print("2. Check for birthdays in a given period")
+    print("1. Check for birthdays today")
+    print("2. Check for birthdays in any given month")
     print("3. Add a birthday")
     print("4. Delete a birthday")
     print("5. Exit")
     opt = input("Select your option (1-5): ")
     return opt
-
-
-# def birthday_checker():
-#     # asks for name and
-    
-    
-
-#     # add_item(list_of_products, name, price)
-#     # print(f"{name} being added to the menu...")
-    
-
-
-# def range_checker():
-#     #show the list of products
-#     # print_list_of_items(list_of_products)
-#     #ask about the product we want to delete
-#     name = input("What is the product you want to delete? ")
-#     # delete_item(list_of_products, name)
-#     #make sure it is in the menu
-
-#     #delete it
-
-# def add_birthday():
-#     #show the list of products
-#     # print_list_of_items(list_of_products)
-#     #ask about the product we want to delete
-#     name = input("What is the product you want to update? ")
-#     #make sure it is in the menu
-#     # update_item_price(list_of_products,name)
-#     #ask for the new price
-
-# def delete_birthday():
-#     print("start a new order...")
-#     # under construction
 
 option = ""
 
@@ -69,10 +33,13 @@ while option != "5":
     option = print_options()
     system('clear')
     if option == "1":
-        print("Will check for birthdays today...")
+        from check_today import *
+        checkbirthdays()
+
         
     elif option == "2":
-        print("asks user to set date range and checks for birthdays in that range")
+        from check_a_month import *
+        check_a_month()
         
     elif option == "3":
         print("allows user to add a birthday")

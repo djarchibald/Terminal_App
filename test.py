@@ -1,30 +1,23 @@
-from datetime import date
-import pandas as pd
-import os   
+import time
+# import os
+birthday_file = "list_of_birthdays.txt"
 
-
-#set current date 
-
-today = date.today()
-currentmonth = today.month
-currentday = today.day
-
-# message
-def notification(Person):
-    message = Person + """'s Birthday Today"""
-    return message
-
-df = pd.read_csv(r'birthdays.csv')
-
-for i in range(len(df)):
-    if df.loc[i, 'Month']==currentmonth and df.loc[i, 'Day'] ==currentday:
-        birthdayperson = df.loc[i, 'Person']
-    
-
-# my_birthdays = open("birthdays.txt", "r")
-# print(my_birthdays.readlines())
-
-
-
-
-# my_birthdays.close()
+def checkbirthdays():
+    birthdays = open(birthday_file, 'r')
+    today = time.strftime('%m/%d')
+    flag = 0
+    for line in birthdays:
+        if today in line:
+            line = line.split(' ')
+            flag =1
+            # line[1] contains Name and line[2] contains Surname
+            print("Remember to wish: " + line[1] + ' ' + line[2] + ' ' "a happy birthday!")
+    # else:
+    #     if today not in line:
+    #         print("Don't worry, you didn't forget anyone - there are no birthdays today.")
+    if flag == 0:
+    #         # os.system('notify-send "No Birthdays Today!"')
+        print("Don't worry, you didn't forget anyone. There are no birthdays today.")
+  
+if __name__ == '__main__':
+    checkbirthdays()
