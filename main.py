@@ -42,10 +42,12 @@ while option != "5":
         check_a_month()
         
     elif option == "3":
-        print("allows user to add a birthday")
+        from Add_birthday import *
+        add_birthday()
         
     elif option == "4":
-        print("allows user to delete a birthday")
+        from delete_birthday import *
+        remove_birthday()
        
     #manages the exit option and the invalid options
     elif option == "5":

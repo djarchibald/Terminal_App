@@ -12,8 +12,7 @@ def remove_birthday():
         for line in birthday_list:
             if line.strip("\n") != (to_delete) :
                 f.write(line)
-    print("Birthday deleted. Your list of birthdays is now:")
-
+            print("Birthday deleted. Your list of birthdays is now:")
     birthday_list = open("list_of_birthdays.txt", "r")
     for birthday in birthday_list.readlines():
         print(birthday)
