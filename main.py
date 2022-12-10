@@ -36,7 +36,6 @@ while option != "5":
         from check_today import *
         checkbirthdays()
 
-        
     elif option == "2":
         from check_a_month import *
         check_a_month()
