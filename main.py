@@ -1,6 +1,7 @@
 from os import system
 from datetime import date
 import time
+from sys import argv
 
 
 # set date to use in main menu
