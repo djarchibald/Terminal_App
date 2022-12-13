@@ -1,0 +1,48 @@
+***WELCOME TO THE GUIDANCE FOR YOUR BIRTHDAY REMINDER APP***
+
+LAUNCHING THE APP
+
+In your terminal, simply type: XXXXXXXXXXX
+On launch the app will check your system compatibility. If you do not have python installed on yoru system, you will see a message directing you to download the latest version of python, and a link to https://installpython3.com/
+
+HOME PAGE/ MAIN MENU
+
+The Home  page consists of  a welcome message displaying the current date and offers a list of 6 options to choose from.
+
+OPTION 1: CHECKING IF THERE ARE ANY BIRTHDAYS TODAY 
+
+Selecting option 1 launches an automated check to see if any birthdays stored in your database match today's date. 
+If the system finds there is a match, you will be prompted to wish that person a happy birthday.
+If the system does not find a match, you will see a message reassuring you that you have not forgotten a birthday today.
+Once the check has completed, simply hit Enter to return to the main menu.
+
+OPTION 2: CHECKING FOR BIRTHDAYS IN ANY GIVEN MONTH 
+
+This option gives you the chance to check what if any birthdays will be coming around in any given month. 
+After selecting 2 on the main menu you will be prompted to eneter a number from 01-12 to select the month you wish to check.
+Please note that months MUST be entered in a TWO-DIGIT format E.G. 01, 02, 03, 12.
+The app will list any birthdays taking place in that month, or let you know that there are no birthdays.
+Once you have checked a month, simply hit Enter to return to the main menu.
+
+OPTION 3: ADDING A BIRTHDAY TO YOUR REMINDERS LIST 
+
+After selcting option 3 you will see a prompt to enter a new birthday in the format MM/DD Firstname Lastname.
+On entering this information, the app will print your new list of birthdays.
+Any birthdays added that do not match this format will not feature in the day (Option 1) or month (Option 2) checkers.
+To delete any incorrectly entered data, please follow the prompts in Option 4, being sure to re-enter the data to be deleted EXACTLY as you entered it initially.  
+Once you have added your new birthday, simply hit enter to return to the main menu.
+
+OPTION 4: DELETING A BIRTHDAY FROM YOUR REMINDERS LIST 
+
+If you wish to no longer be reminded about a particular birthday, simply select option 4 from the main menu and follow the prompts.
+As with option 3, it is iomportant that you enter the data you wish to be removed from the list in the exact format it appears in the list.
+For correctly entered birthdays this will be MM/DD Firstname Lastname (if one has been provided).
+This option can also be used to delete information incorrectly entered in the wrong format. When prompted, please ensure you eneter the data to be deleted EXACTLY as it was originally entered.
+
+OPTION 5
+As you have discovered, selecting Option 5 opens this guidance to help you in using this birthday reminder app. 
+Hopefully you never need to visit this page, but if you'd like to know more about building much better versions of apps like this, maybe checkout https://www.coderacademy.edu.au/
+
+OPTION 6
+Hit option 6 to exit the app. A goodbye message will confirm you have exited the app. 
+

@@ -3,6 +3,8 @@ from datetime import date
 import time
 from sys import argv
 
+guidance = "help.txt"
+
 
 # set date to use in main menu
 today = date.today()
@@ -16,8 +18,9 @@ def print_options():
     print("2. Check for birthdays in any given month")
     print("3. Add a birthday")
     print("4. Delete a birthday")
-    print("5. Exit")
-    opt = input("Select your option (1-5): ")
+    print("5. Help")
+    print("6. Exit")
+    opt = input("Select your option (1-6): ")
     return opt
 
 option = ""
@@ -26,7 +29,7 @@ option = ""
 # Each valid option invokes the selected function
 # The loop only stops when the input is 6 (exit option)
 
-while option != "5":
+while option != "6":
     system('clear')
     print(f'Welcome to your birthday reminder app. It is {today}. What would you like to do today?')
     
@@ -48,9 +51,15 @@ while option != "5":
     elif option == "4":
         from delete_birthday import *
         remove_birthday()
-       
-    #manages the exit option and the invalid options
+    
     elif option == "5":
+        guidance_file = "help.txt"
+        guidance_file = open("help.txt", "r")
+        print(guidance_file.read())
+        guidance_file.close()
+
+    #manages the exit option and the invalid options
+    elif option == "6":
         continue
     else:
         print("Invalid option")
