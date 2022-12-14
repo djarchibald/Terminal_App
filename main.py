@@ -3,7 +3,7 @@ from datetime import date
 import time
 from sys import argv
 from rich import print
-from rich.prompt import prompt
+# from rich.prompt import prompt
 
 
 guidance = "help.txt"
@@ -65,9 +65,9 @@ while option != "6":
     elif option == "6":
         continue
     else:
-        print("Invalid option")
+        print("[red]Invalid option")
     #adds a break in the control flow until the user presses Enter    
     input("press Enter to continue...")
     system('clear')
 
-print("Goodbye!") 
+print("[yellow]Goodbye!") 

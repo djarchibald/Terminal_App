@@ -13,11 +13,11 @@ def checkbirthdays():
             line = line.split(' ')
             flag =1
             # line[1] contains Name and line[2] contains Surname
-            print("[bold red]Remember to wish: " + line[1] + ' ' + line[2] + ' ' "[italic red]a very happy birthday!")
+            print("Remember to wish: [red]" + line[1] + ' ' + line[2] + ' ' "[/red]a very happy birthday!")
     
     if flag == 0:
    
-        print("[bold green]Don't worry, you didn't forget anyone. There are no birthdays today.")
+        print("[italic green]Don't worry, you didn't forget anyone. There are no birthdays today.")
   
 if __name__ == '__main__':
     checkbirthdays()
