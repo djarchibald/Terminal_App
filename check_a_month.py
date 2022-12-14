@@ -1,5 +1,5 @@
 import time
-
+from rich import print
 
 birthday_file = "list_of_birthdays.txt"
 
@@ -14,7 +14,7 @@ def check_a_month():
             flag =1
             print(line)  
     if flag == 0:
-        print("There are no birthdays to remember that month.")
+        print("[bold yellow]There are no birthdays to remember that month.")
   
 if __name__ == '__main__':
     check_a_month()
