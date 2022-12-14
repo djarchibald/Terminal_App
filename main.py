@@ -25,7 +25,7 @@ def print_options():
 
 option = ""
 
-# Menu feature: The while loop prints the menu option and the user select the option.
+# Menu: while loop prints the menu option and the user select the option.
 # Each valid option invokes the selected function
 # The loop only stops when the input is 6 (exit option)
 
@@ -33,7 +33,6 @@ while option != "6":
     system('clear')
     print(f'Welcome to your birthday reminder app. It is {today}. What would you like to do today?')
     
-    # invoke print options and return the selected option
     option = print_options()
     system('clear')
     if option == "1":
@@ -58,7 +57,7 @@ while option != "6":
         print(guidance_file.read())
         guidance_file.close()
 
-    #manages the exit option and the invalid options
+   
     elif option == "6":
         continue
     else:
