@@ -1,6 +1,7 @@
 # Coder Academy, T1A3: Terminal Application. Duncan Archibald  
 
 **Link to Github repo:** https://github.com/djarchibald/Terminal_App
+** Link to youtube presentation:
 
 ## Features
 - **Executable**  
@@ -51,6 +52,25 @@
 
 
 ## Implementation Plan
+
+**Selection of Trello board screenshots**  
+Covering creating basic implementation plan through to near completion (still need to upload presentation & submit at time of writing)  
+
+**Overview**
+![Screenshot Trello board overview](trello%20images/trello%20board%20overview.jpeg)  
+
+**First Steps**
+![screenshot of trello board basic implementation plan](trello%20images/Trello%20Board%20-%20%20basics%20to%20do%20list.jpeg)  
+
+**Python**
+![screenshot of trello board python coding to-do list](trello%20images/Trello%20board%20-%20python%20coding%20to%20do%20list.jpeg)  
+
+**Bash scripting**
+![screenshot of trello board bash scripting to do list](trello%20images/trello%20board%20bash%20scripting%20to%20do%20list.jpeg)  
+
+**Nearly complete:**
+![trello board showing all actions done except upload](trello%20images/Trello%20board%20-%20complete%20(except%20upload).jpeg)
+
 
 ## Help
 Help documentation can be found under option 5 in main menu of the app (or ./help.txt, if prefer)
