@@ -9,7 +9,7 @@ from rich import print
 guidance = "help.txt"
 
 
-# set date to use in main menu
+# set date
 today = date.today()
 # set out the list of birthdays this is all drawn from
 birthday_file = "list_of_birthdays.txt"
@@ -30,8 +30,7 @@ def print_options():
 option = ""
 
 # Menu: while loop prints the menu option and the user select the option.
-# Each valid option invokes the selected function
-# The loop only stops when the input is 6 (exit option)
+# loop only stops when the input is 6 (exit option)
 
 while option != "6":
     system('clear')
@@ -54,7 +53,7 @@ while option != "6":
     elif option == "4":
         from delete_birthday import *
         remove_birthday()
-    
+    # help options:
     elif option == "5":
         guidance_file = "help.txt"
         guidance_file = open("help.txt", "r")
@@ -64,9 +63,10 @@ while option != "6":
    
     elif option == "6":
         continue
+    # error control:
     else:
         print("[red]Invalid option")
-    #adds a break in the control flow until the user presses Enter    
+    #adds a break in the control flow until the user presses Enter:    
     input("press Enter to continue...")
     system('clear')
 
