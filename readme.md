@@ -1,7 +1,8 @@
 # Coder Academy, T1A3: Terminal Application. Duncan Archibald  
 
 **Link to Github repo:** https://github.com/djarchibald/Terminal_App
-** Link to youtube presentation:
+** Link to youtube presentation: https://youtu.be/TSpqt8Exeu4
+
 
 ## Features
 - **Executable**  
