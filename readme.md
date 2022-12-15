@@ -1,12 +1,16 @@
-# Coder Academy, Term 1 Assignment 3: Terminal Application. Duncan Archibald  
+# Coder Academy, T1A3: Terminal Application. Duncan Archibald  
 
 **Link to Github repo:** https://github.com/djarchibald/Terminal_App
 
 ## Features
 - **Executable**  
   This app is executable from the command line, and does not require the user to have a working knowledge of python. Upon opening, the app will automatically check to see that python is installed onthe user's machine - if yes, the app will open. If no, the user will be directed to download the latest version of python from their website. 
+
+  The bash script is saved in a file: ./happybirthday.sh. To open in Terminal CD to the app files and type: ./happybirthday.sh
     
 - **Main Menu**  
+  Function is ```print_options()```.  
+
   The home page/main menu plays a key role in managing the flow of the app. It is the first thing the user sees when using the app, and is the page to which they are returned when their selected option is complete.  
   
   The menu is intended to be clear and straightforward, allowing the user to navigate easily to their desired option. It has brief, clear instructions but should the user inadvertently enter an invalid option, the app will notfiy the user that they have entered something incorrectly before returning them to the main menu to try again.
@@ -29,9 +33,22 @@
 
   Unlike the previous function, this one does require user input, with the user prompted to enter a number from 01-12 to select the month they wish to check. The function then loops through the list of birthdays checking only the first two characters (i.e. the month) of each line. Any matches are then printed for the user. If there are no matches, the user is given a message that there are no birthdays that month. After either message is printed, the user is prompted to hit enter to return to the main menu. 
 
-**Add birthday**
+- **Add birthday**  
+  Function is ```add_birthday()```.  
 
-**Remove birthday**
+  This option, allows the user to add a birthday to the database that the app checks in options 1 and 2. This function makes use of a couple of for loops to firstly display the list of birthdays as it stands, and then, following the user input, to display the newly amended list (to confirm the new data has been enetered correctly.  
+  
+   On selecting option 3, the app accesses the birthday list in read mode, and prints it for the user. The code then closes the file and reopens it in append mode. The user is prompted to enter the new birthday they wish to save, which is written to the next line in the list. The second loop then runs, iterating through the list, and printing all the entries. This allows the user to confirm, they have sucesfully entered a new birthday, before being prompted to hit enter to return to the main menu.
+
+- **Remove birthday**  
+  Function is ```remove_birthday()```.  
+
+  This option allows users to delete a birthday that they no longer wish to be reminded about. It also serves as a method for removing any incorrectly entered data.  
+
+  On selecting this option, the app accesses the birthday list in read mode, and prints the complete list. The user is prompted to enter the data they wish to delete. With the birthday list open in write mode, the app then loops through the list, looking for any data that matches user the user input, and writes any that don't match (i.e. generating a list without the entry that the user wants deleted). The user is shown a message that the birthday they entered has been deleted, alongside a printout (at this point the app accsess the list inn read mode) of the new list (i.e. less the data the user inputed earlier).  
+
+  This option can also be used to remove data that has been entered in error, or in the incorrect format from the list.
+
 
 ## Implementation Plan
 
